@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300;400&display=swap');
+
+/*Tamanho feito em cima das dimensões do iPhone 12/13 Pro Max iOS 14.6*/
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 428px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+
+}
+
+h1 {
+    width: 278px;
+    font-family: Luckiest Guy, cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-top: 50px;
+    
+}
+
+h2 {
+    width: 360px;
+    font-size: 24px;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+/*Inicio do header*/
+
+header {
+    height: 459px;
+}
+
+
+header h1 {
+    color: white;
+    padding: 20px 20px 0 20px;
+}
+
+header p {
+    color: white;
+    padding: 20px;
+}
+
+
+.texto-cabecalho {
+    font-size: 16px;
+}
+
+
+.baixar-windows {
+    width: 355px;
+    height: 50px;
+    margin: 0px 5%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.abra-o-discord {
+    width: 355px;
+    height: 50px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+/*Fim do header*/
+
+/*Inicio das sections*/
+section {
+    padding: 20px;
+}
+
+section figure, img {
+    background-position: left;
+    padding: 0;
+    margin: 0;
+}
+
+/*Imagens utilizadas no site, menos a imagem do header*/
+
+/*Colocando um tamanho nas imagens*/
+.primeira-imagem, .terceira-imagem, .quarta-imagem {
+    width: 379px;
+    height: 252px;
+}
+
+.segunda-imagem {
+    width: 479px;
+    height: 372px;
+}
+
+.footer {
+    width: 429px;
+    height: 140px;
+}
+/*Fim dos tamanhos*/
+
+#primeira-imagem {
+    background-image: url(../img/primeira-imagem.png);
+    
+}
+
+#primeira-imagem2 {
+    background-image: url(../img/primeira-imagem-desktop.png);
+}
+
+#segunda-imagem {
+    background-image: url(../img/segunda-imagem.png);
+}
+
+#segunda-imagem2 {
+    background-image: url(../img/segunda-imagem-desktop.png);
+}
+
+#terceira-imagem {
+    background-image: url(../img/terceira-imagem.png);
+}
+
+#terceira-imagem2 {
+    background-image: url(../img/terceira-imagem-desktop.png);
+}
+
+#quarta-imagem {
+    background-image: url(../img/quarta-imagem.png);
+}
+
+#quarta-imagem2 {
+    background-image: url(../img/quarta-imagem-desktop.png);
+}
+
+#footer {
+    background-image: url(../img/footer.png);
+}
+
+#footer2 {
+    background-image: url(../img/footer-desktop.png);
+}
+
+/*Fim das Imagens*/
+
+
+.segunda-sessao, .quarta-sessao {
+    background-color: #F6F6F6;
+}
+
+.quarta-sessao h1 {
+    width: 376px;
+}
+
+/*Fim das sections*/
+
+/*Inicio da tela mobile*/
+@media screen and (max-width: 799px) {
+   header {
+    background-image: url(../img/header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+   }
+
+   .header-container {
+    width: 428px;
+    height: 366px;
+    padding: 0px 10px;   
+    }
+
+    /*Colocando na ordem as imagens que devem aparecer conforme a tela ter no máximo 799px*/
+    #primeira-imagem {
+        display: block;
+    }
+    #primeira-imagem2 {
+        display: none;
+    }
+
+    #segunda-imagem {
+        display: block;
+        width: 100%;
+    }
+    #segunda-imagem2 {
+        display: none;
+    }
+
+    #terceira-imagem {
+        display: block;
+    }
+    #terceira-imagem2 {
+        display: none;
+    }
+
+    #quarta-imagem {
+        display: block;
+    }
+    #quarta-imagem2 {
+        display: none;
+    }
+
+    #footer {
+        display: block;
+    }
+    #footer2 {
+        display: none;
+    }
+    /*Fim das ordens das Imagens*/
+}
+/*Fim da Tela Mobile*/
+
+@media screen and (min-width: 800px) {
+    body {
+        margin: 0 auto;
+        padding: 0;
+        width: 1280px;
+        text-align: center;
+        gap: 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+           
+    }
+
+    /*Inicio do cabeçalho*/
+
+    .header-container {
+        margin: 0 auto;
+        width: 1280px;
+        height: 459px;
+        background-image: url(../img/header-background-desktop.png);
+        background-repeat: no-repeat;
+        
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 24px;
+        margin: 0 auto;
+        width: 757px;
+        height: 270px;
+    }
+
+    #botoes-do-cabecalho {
+        align-items: center;
+    }
+
+
+    .header-container #titulo-cabecalho {
+        width: 313px;
+        height: 112px;
+        text-align: center;
+        font-size: 56px;
+        line-height: 56px;
+        margin-top: 120px;
+    }
+    
+    #texto-cabecalho {
+        margin: 0;
+        padding: 0;
+        max-width: 757px;
+        height: 270px;
+        text-align: center;
+    }
+
+    #botoes-do-cabecalho {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+    /*Fim do cabeçalho*/
+
+    /*Inicio das configurações das sections*/
+
+    .primeira-sessao, .segunda-sessao, .terceira-sessao, .quarta-sessao {
+        margin: 0 auto;
+        width: 1280px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #primeira-sessao, #segunda-sessao, #terceira-sessao, #quarta-sessao {
+        margin: 0 auto;
+        width: 971px;
+        height: 394px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        top: 499px;
+    }
+    .texto-sessao {
+        width: 348px;
+        height: 374px;
+    }
+
+    .titulo-sessao {
+        
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .segunda-sessao .texto-sessao {
+        margin-top: 80px;
+    }
+
+    .terceira-sessao .texto-sessao {
+        margin-top: 50px;
+    }
+
+    #quarta-sessao {
+        width: 802px;
+        height: 744px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quarta-sessao .titulo-sessao {
+        width: 608px;
+        height: 80px;
+        text-align: center;
+    }
+
+    /*Fim das configurações das sections*/
+
+   
+
+    /*Colocando um tamanho nas imagens*/
+    .primeira-imagem, .segunda-imagem, .terceira-imagem {
+        width: 607px;
+        height: 394px;
+    }
+
+    .quarta-imagem {
+        width: 784px;
+        height: 508px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 134px;
+    }
+    /*Fim do tamanho nas imagens*/
+
+    /*Colocando na ordem as imagens que devem aparecer conforme a tela ter a partir de 800px*/
+
+    #primeira-imagem {
+        display: none;
+    }
+    #primeira-imagem2 {
+        display: block;
+    }
+
+    #segunda-imagem {
+        display: none;
+    }
+    #segunda-imagem2 {
+        display: block;
+    }
+
+    #terceira-imagem {
+        display: none;
+    }
+    #terceira-imagem2 {
+        display: block;
+    }
+
+    #quarta-imagem {
+        display: none;
+    }
+    #quarta-imagem2 {
+        display: block;
+    }
+
+    #footer {
+        display: none;
+    }
+    #footer2 {
+        display: block;
+    }
+
+    /*Fim da ordem das imagens*/
+
+    .segundo-texto {
+        
+        width: 348px;
+        height: 374px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #titulo-segundo-texto {
+        width: 329px;
+        height: 245px;
+        font-size: 32px;
+        margin-top: 28px;
+        margin-bottom: 0;
+        
+    }
+
+    #segundo-texto {
+        margin: 0;
+        height: 85px;
+    }
+}
